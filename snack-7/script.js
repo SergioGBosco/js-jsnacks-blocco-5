@@ -21,3 +21,15 @@ const students = [
 
 // Recupera i dati dello studente con id 2
 // Risultato: { id: 2, name: 'Mario Banfi', age: 34, class: '4A' }
+
+const secondstudent = students.find(function (identificativo) { // Funzione Semplice
+  if (identificativo.id === 2) {
+    return identificativo
+  }
+});
+console.log(secondstudent)
+
+
+
+const studenteDue = students.find(identificativo => identificativo.id === 2); //funzione freccia 
+console.log(studenteDue)
