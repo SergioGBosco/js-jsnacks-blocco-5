@@ -6,3 +6,11 @@ const people = [
 
 // Stampa in console tutti i nomi
 // Risultato: 'Paolo', 'Giulia', 'Marco'
+
+people.forEach(function (showname) { //funzione semplice
+
+  console.log(showname.name)
+
+})
+
+people.forEach(showname => console.log(showname.name)) // funzione freccia 
